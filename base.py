@@ -5,7 +5,13 @@ from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
 from tqdm import tqdm
-
+import torch
+import torch.nn as nn
+from torchvision import models
+from torch.utils.data import DataLoader
+from torchvision import transforms
+import numpy as np
+from sklearn.model_selection import train_test_split
 
 class FathomNetDataset(Dataset):
 
@@ -33,72 +39,84 @@ class FathomNetDataset(Dataset):
         return image, label
 
 
-from torch.utils.data import DataLoader
-from torchvision import transforms
+# add main protection
+if __name__ == "__main__":
+    transform = transforms.Compose(
+        [
+            transforms.Resize((224, 224)),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+        ]
+    )
 
-transform = transforms.Compose(
-    [
-        transforms.Resize((224, 224)),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-    ]
-)
+    full_dataset = FathomNetDataset(
+        csv_file="data/annotations.csv",
+        transform=transform,
+    )
 
-train_dataset = FathomNetDataset(
-    csv_file="train/annotations.csv",
-    transform=transform,
-)
+    # Split the dataset into training and validation sets
+    train_indices, val_indices = train_test_split(
+        np.arange(len(full_dataset)), test_size=0.2, random_state=42, stratify=full_dataset.annotations["label"]
+    )
+    # make sure subsets are same format as full dataset
+    train_dataset = torch.utils.data.Subset(full_dataset, train_indices)
+    val_dataset = torch.utils.data.Subset(full_dataset, val_indices)
 
-train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True)
+    train_loader = DataLoader(train_dataset, batch_size=50, shuffle=True, num_workers=4)
 
-import torch
-import torch.nn as nn
-from torchvision import models
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-resnet50 = models.resnet50()
-num_classes = len(set(train_dataset.annotations["label"]))
-resnet50.fc = nn.Linear(resnet50.fc.in_features, num_classes)
-resnet50 = resnet50.to(device)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print("Using device:", device)
+    # exit if no GPU is available
+    if device.type == "cpu":
+        print("No GPU available. Exiting.")
+        exit()
 
-import torch.optim as optim
+    resnet50 = models.resnet50()
+    num_classes = len(set(full_dataset.annotations["label"]))
+    resnet50.fc = nn.Linear(resnet50.fc.in_features, num_classes)
+    resnet50 = resnet50.to(device)
 
-criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(resnet50.parameters(), lr=0.001)
+    import torch.optim as optim
 
-best_acc = 0.0
-patience = 3
-epochs_no_improve = 0
-early_stop = False
-epochs = 17
-for epoch in range(epochs):  # adjust # of epochs
-    resnet50.train()
-    running_loss = 0.0
-    correct = 0
-    total = 0
-    loop = tqdm(train_loader, desc=f"Epoch [{epoch+1}/{epochs}]", leave=True)
-    for images, labels in loop:
-        images, labels = images.to(device), labels.to(device)
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(resnet50.parameters(), lr=0.001)
 
-        outputs = resnet50(images)
-        loss = criterion(outputs, labels)
+    best_acc = 0.0
+    patience = 3
+    epochs_no_improve = 0
+    early_stop = False
+    epochs = 1
 
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+    for epoch in range(epochs):  # adjust # of epochs
+        resnet50.train()
+        running_loss = 0.0
+        correct = 0
+        total = 0
+        loop = tqdm(train_loader, desc=f"Epoch [{epoch+1}/{epochs}]", leave=True)
+        for images, labels in loop:
+            images, labels = images.to(device), labels.to(device)
 
-        # Update loss
-        running_loss += loss.item()
+            outputs = resnet50(images)
+            loss = criterion(outputs, labels)
 
-        # Calculate accuracy
-        _, predicted = torch.max(outputs.data, 1)
-        total += labels.size(0)
-        correct += (predicted == labels).sum().item()
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-    epoch_loss = running_loss / len(train_loader)
-    epoch_acc = 100 * correct / total
+            # Update loss
+            running_loss += loss.item()
 
-    print(f"Epoch {epoch+1} | Loss: {epoch_loss:.4f} | Accuracy: {epoch_acc:.2f}%")
+            # Calculate accuracy
+            _, predicted = torch.max(outputs.data, 1)
+            total += labels.size(0)
+            correct += (predicted == labels).sum().item()
 
-torch.save(resnet50.state_dict(), "resnet50_fathomnet.pth")
+        epoch_loss = running_loss / len(train_loader)
+        epoch_acc = 100 * correct / total
+
+        print(f"Epoch {epoch+1} | Loss: {epoch_loss:.4f} | Accuracy: {epoch_acc:.2f}%")
+
+    torch.save(resnet50.state_dict(), "resnet50_fathomnet.pth")
+
