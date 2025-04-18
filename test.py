@@ -47,5 +47,8 @@ with torch.no_grad():
         preds.append(CLASS_NAMES[idx])
 
 # save
-pd.DataFrame({"path": paths, "label": preds}).to_csv(CSV_OUT, index=False)
+nums = [n for n in range(1, len(preds) + 1)]
+pd.DataFrame({"annotation_id": nums, "concept_name": preds}).to_csv(
+    CSV_OUT, index=False
+)
 print(f"Wrote predictions to {CSV_OUT}")
