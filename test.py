@@ -8,10 +8,11 @@ from torchvision import models, transforms
 
 from base import FathomNetDataset
 
+# MODEL_PATH = input("Enter model path: ")
 # CONFIG
 MODEL_PATH = "resnet50_fathomnet.pth"
 CSV_IN = "test/annotations.csv"
-CSV_OUT = "test/res.csv"
+CSV_OUT = "test/base.csv"
 IMG_SIZE = (224, 224)
 
 # get class names
