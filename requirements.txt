@@ -9,3 +9,4 @@ tqdm
 transformers
 pybioclip
 ultralytics
+fathomnet
