@@ -15,7 +15,7 @@ rank_order = ["kingdom", "phylum", "class", "order", "family", "genus", "species
 
 # Function to query full taxonomic data using GBIF API
 def get_full_taxonomic_data(label, retries=3, delay=1):
-    url = f"https://api.gbif.org/v1/species/match?name={label}"
+    url = f"https://api.gbif.org/v1/species/match?name={label}&fuzzy=true"
     for attempt in range(retries):
         try:
             response = requests.get(url, timeout=5)
