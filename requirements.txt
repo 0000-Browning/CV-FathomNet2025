@@ -8,3 +8,5 @@ torchvision
 tqdm
 transformers
 pybioclip
+ultralytics
+fathomnet

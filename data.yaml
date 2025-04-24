@@ -1,0 +1,91 @@
+# data.yaml
+path: .
+
+train:
+  images: train/images
+  labels: data/labels/train_yolo
+val:
+  images: train/images
+  labels: data/labels/val
+
+nc: 79
+names:
+  0: Abyssocucumis abyssorum
+  1: Acanthascinae
+  2: Acanthoptilum
+  3: Actinernus
+  4: Actiniaria
+  5: Actinopterygii
+  6: Amphipoda
+  7: Apostichopus leukothele
+  8: Asbestopluma
+  9: Asbestopluma monticola
+  10: Asteroidea
+  11: Benthocodon pedunculata
+  12: Brisingida
+  13: Caridea
+  14: Ceriantharia
+  15: Chionoecetes tanneri
+  16: Chorilia longipes
+  17: Corallimorphus pilatus
+  18: Crinoidea
+  19: Delectopecten
+  20: Elpidia
+  21: Farrea
+  22: Florometra serratissima
+  23: Funiculina
+  24: Gastropoda
+  25: Gersemia juliepackardae
+  26: Heterocarpus
+  27: Heterochone calyx
+  28: Heteropolypus ritteri
+  29: Hexactinellida
+  30: Hippasteria
+  31: Holothuroidea
+  32: Hormathiidae
+  33: Isidella tentaculum
+  34: Isididae
+  35: Isosicyonis
+  36: Keratoisis
+  37: Liponema brevicorne
+  38: Lithodidae
+  39: Mediaster aequalis
+  40: Merluccius productus
+  41: Metridium farcimen
+  42: Microstomus pacificus
+  43: Munidopsis
+  44: Munnopsidae
+  45: Mycale
+  46: Octopus rubescens
+  47: Ophiacanthidae
+  48: Ophiuroidea
+  49: Paelopatides confundens
+  50: Pandalus amplus
+  51: Pandalus platyceros
+  52: Pannychia moseleyi
+  53: Paragorgia
+  54: Paragorgia arborea
+  55: Paralomis multispina
+  56: Parastenella
+  57: Peniagone
+  58: Pennatula phosphorea
+  59: Porifera
+  60: Psathyrometra fragilis
+  61: Psolus squamatus
+  62: Ptychogastria polaris
+  63: Pyrosoma atlanticum
+  64: Rathbunaster californicus
+  65: Scleractinia
+  66: Scotoplanes
+  67: Scotoplanes globosa
+  68: Sebastes
+  69: Sebastes diploproa
+  70: Sebastolobus
+  71: Serpulidae
+  72: Staurocalyptus
+  73: Strongylocentrotus fragilis
+  74: Terebellidae
+  75: Tunicata
+  76: Umbellula
+  77: Vesicomyidae
+  78: Zoantharia

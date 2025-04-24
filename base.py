@@ -1,17 +1,15 @@
 import os
 
+import numpy as np
 import pandas as pd
-from PIL import Image
-from torch.utils.data import Dataset
-from torchvision import transforms
-from tqdm import tqdm
 import torch
 import torch.nn as nn
-from torchvision import models
-from torch.utils.data import DataLoader
-from torchvision import transforms
-import numpy as np
+from PIL import Image
 from sklearn.model_selection import train_test_split
+from torch.utils.data import DataLoader, Dataset
+from torchvision import models, transforms
+from tqdm import tqdm
+
 
 class FathomNetDataset(Dataset):
 
@@ -46,13 +44,15 @@ if __name__ == "__main__":
         [
             transforms.Resize((224, 224)),  # Resize images to 224x224 pixels
             transforms.ToTensor(),  # Convert images to PyTorch tensors
-            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),  # Normalize using ImageNet stats
+            transforms.Normalize(
+                mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
+            ),  # Normalize using ImageNet stats
         ]
     )
 
     # Load the full dataset using the custom FathomNetDataset class
     full_dataset = FathomNetDataset(
-        csv_file="data/annotations.csv",  # Path to the CSV file containing annotations
+        csv_file="train/annotations.csv",  # Path to the CSV file containing annotations
         transform=transform,  # Apply the transformation pipeline
     )
 
@@ -61,7 +61,9 @@ if __name__ == "__main__":
         np.arange(len(full_dataset)),  # Indices of the dataset
         test_size=0.2,  # 20% of the data will be used for validation
         random_state=42,  # Ensure reproducibility
-        stratify=full_dataset.annotations["label"],  # Stratify by label to maintain class distribution
+        stratify=full_dataset.annotations[
+            "label"
+        ],  # Stratify by label to maintain class distribution
     )
 
     # Create subsets for training and validation
@@ -90,17 +92,22 @@ if __name__ == "__main__":
 
     # Modify the final fully connected layer to match the number of classes
     num_classes = len(set(full_dataset.annotations["label"]))  # Number of unique labels
-    resnet50.fc = nn.Linear(resnet50.fc.in_features, num_classes)  # Replace the FC layer
+    resnet50.fc = nn.Linear(
+        resnet50.fc.in_features, num_classes
+    )  # Replace the FC layer
     resnet50 = resnet50.to(device)  # Move the model to the selected device
 
     # Define the loss function and optimizer
     import torch.optim as optim
+
     criterion = nn.CrossEntropyLoss()  # Cross-entropy loss for classification
-    optimizer = optim.Adam(resnet50.parameters(), lr=0.001)  # Adam optimizer with learning rate 0.001
+    optimizer = optim.Adam(
+        resnet50.parameters(), lr=0.001
+    )  # Adam optimizer with learning rate 0.001
 
     # Initialize variables for early stopping
     best_acc = 0.0
-    patience = 3 # Number of epochs with no improvement before stopping
+    patience = 3  # Number of epochs with no improvement before stopping
     epochs_no_improve = 0
     early_stop = False
     epochs = 20  # Number of epochs to train
@@ -171,13 +178,10 @@ if __name__ == "__main__":
             _, predicted = torch.max(outputs.data, 1)  # Get predicted class
             val_total += labels.size(0)
             val_correct += (predicted == labels).sum().item()
-        
-        #calculate validation accuracy
+
+        # calculate validation accuracy
         val_acc = 100 * val_correct / val_total
         # calculate validation loss
         val_loss /= len(val_loader)
         # Print validation metrics
         print(f"Validation Loss: {val_loss:.4f} | Validation Accuracy: {val_acc:.2f}%")
-
-
-
