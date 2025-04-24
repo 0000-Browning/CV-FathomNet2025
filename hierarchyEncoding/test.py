@@ -2,9 +2,9 @@ import pandas as pd
 import torch
 from PIL import Image
 from torchvision import transforms
+from tqdm import tqdm  # Add this import
 
-from base import FathomNetDataset
-from hiearchy import (
+from hierarchyEncoding.hiearchy import (
     build_raw_paths,
     build_rank2idx,
     HierarchicalTaxonEncoder,
@@ -12,14 +12,14 @@ from hiearchy import (
 )
 
 # 1) Config
-MODEL_PATH = "best_hier_model.pth"
-CSV_IN     = "other/annotations.csv"
-CSV_OUT    = "other/hier.csv"
+MODEL_PATH = "../models/best_hier_model.pth"
+CSV_IN     = "../testdata/annotations.csv"
+CSV_OUT    = "../hierarchyEncoding/hier.csv"
 IMG_SIZE   = (224, 224)
 device     = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # 2) Recover class names directly from your training CSV
-df_train    = pd.read_csv("plz/annotations.csv")
+df_train    = pd.read_csv("../traindata/annotations.csv")
 CLASS_NAMES = sorted(df_train["label"].unique())
 
 # 3) Rebuild taxonomy mappings exactly as you did during training
@@ -47,16 +47,28 @@ tf = transforms.Compose([
     transforms.Normalize([0.485,0.456,0.406], [0.229,0.224,0.225]),
 ])
 
-# 7) Run inference
+# 7) Run inference with a loading bar
 df    = pd.read_csv(CSV_IN)
 preds = []
 with torch.no_grad():
-    for p in df["path"]:
+    for p in tqdm(df["path"], desc="Running inference", unit="image"):
         img = Image.open(p).convert("RGB")
         x   = tf(img).unsqueeze(0).to(device)  # shape (1,3,224,224)
         out = model(x, unk_path)              # shape (1, num_classes)
         idx = out.argmax(dim=1).item()
         preds.append(CLASS_NAMES[idx])
+
+import matplotlib.pyplot as plt
+
+# Generate histogram of predictions
+pred_counts = pd.Series(preds).value_counts(sort=False)
+plt.bar(pred_counts.index, pred_counts.values, tick_label=pred_counts.index)
+plt.xlabel("Class Names")
+plt.ylabel("Frequency")
+plt.title("Histogram of Predictions")
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.show()
 
 # 8) Save results
 pd.DataFrame({
