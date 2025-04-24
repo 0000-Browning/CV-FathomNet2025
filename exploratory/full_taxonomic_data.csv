@@ -1,0 +1,80 @@
+rank,label,kingdom,phylum,class,order,family,genus,species
+Genus,Sebastolobus,Animalia,Chordata,,Scorpaeniformes,Sebastidae,Sebastolobus,
+Species,Apostichopus leukothele,Animalia,Echinodermata,Holothuroidea,Synallactida,Stichopodidae,Apostichopus,Apostichopus leukothele
+Genus,Scotoplanes,Animalia,Echinodermata,Holothuroidea,Elasipodida,Elpidiidae,Scotoplanes,
+Genus,Keratoisis,Animalia,Cnidaria,Anthozoa,Scleralcyonacea,Keratoisididae,Keratoisis,
+Family,Munnopsidae,Animalia,Arthropoda,Malacostraca,Isopoda,Munnopsidae,,
+Species,Scotoplanes globosa,Animalia,Echinodermata,Holothuroidea,Elasipodida,Elpidiidae,Scotoplanes,Scotoplanes globosa
+Species,Chionoecetes tanneri,Animalia,Arthropoda,Malacostraca,Decapoda,Oregoniidae,Chionoecetes,Chionoecetes tanneri
+Genus,Hippasteria,Animalia,Echinodermata,Asteroidea,Valvatida,Goniasteridae,Hippasteria,
+Genus,Munidopsis,Animalia,Arthropoda,Malacostraca,Decapoda,Munidopsidae,Munidopsis,
+Family,Serpulidae,Animalia,Annelida,Polychaeta,Sabellida,Serpulidae,,
+Genus,Delectopecten,Animalia,Mollusca,Bivalvia,Pectinida,Pectinidae,Delectopecten,
+Class,Crinoidea,Animalia,Echinodermata,Crinoidea,,,,
+Genus,Tunicata,Bacteria,Cyanobacteria,,,Ilictidae,Tunicata,
+Class,Asteroidea,Animalia,Echinodermata,Asteroidea,,,,
+Species,Pandalus amplus,Animalia,Arthropoda,Malacostraca,Decapoda,Pandalidae,Pandalus,Pandalus ampla
+Species,Isidella tentaculum,Animalia,Cnidaria,Anthozoa,Scleralcyonacea,Keratoisididae,Isidella,Isidella tentaculum
+Class,Holothuroidea,Animalia,Echinodermata,Holothuroidea,,,,
+Species,Paragorgia arborea,Animalia,Cnidaria,Anthozoa,Scleralcyonacea,Coralliidae,Paragorgia,Paragorgia arborea
+Species,Heterochone calyx,Animalia,Porifera,Hexactinellida,Sceptrulophora,Aphrocallistidae,Heterochone,Heterochone calyx
+Genus,Paragorgia,Animalia,Cnidaria,Anthozoa,Scleralcyonacea,Coralliidae,Paragorgia,
+Kingdom,Terebellidae,Animalia,,,,,,
+Class,Ophiuroidea,Animalia,Echinodermata,Ophiuroidea,,,,
+Genus,Peniagone,Animalia,Echinodermata,Holothuroidea,Elasipodida,Elpidiidae,Peniagone,
+Order,Actiniaria,Animalia,Cnidaria,Anthozoa,Actiniaria,,,
+Unknown,Ceriantharia,,,,,,,
+Family,Isididae,Animalia,Cnidaria,Anthozoa,Malacalcyonacea,Isididae,,
+Species,Rathbunaster californicus,Animalia,Echinodermata,Asteroidea,Forcipulatida,Asteriidae,Rathbunaster,Rathbunaster californicus
+Species,Paelopatides confundens,Animalia,Echinodermata,Holothuroidea,Synallactida,Synallactidae,Paelopatides,Paelopatides confundens
+Species,Abyssocucumis abyssorum,Animalia,Echinodermata,Holothuroidea,Dendrochirotida,Cucumariidae,Abyssocucumis,Abyssocucumis abyssorum
+Species,Strongylocentrotus fragilis,Animalia,Echinodermata,Echinoidea,Camarodonta,Strongylocentrotidae,Strongylocentrotus,Strongylocentrotus fragilis
+Phylum,Porifera,Animalia,Porifera,,,,,
+Species,Psolus squamatus,Animalia,Echinodermata,Holothuroidea,Dendrochirotida,Psolidae,Psolus,Psolus squamatus
+Species,Liponema brevicorne,Animalia,Cnidaria,Anthozoa,Actiniaria,Liponematidae,Liponema,Liponema brevicorne
+Genus,Farrea,Animalia,Porifera,Hexactinellida,Sceptrulophora,Farreidae,Farrea,
+Unknown,Caridea,,,,,,,
+Class,Hexactinellida,Animalia,Porifera,Hexactinellida,,,,
+Genus,Actinernus,Animalia,Cnidaria,Anthozoa,Actiniaria,Actinernidae,Actinernus,
+Species,Pannychia moseleyi,Animalia,Echinodermata,Holothuroidea,Elasipodida,Laetmogonidae,Pannychia,Pannychia moseleyi
+Class,Gastropoda,Animalia,Mollusca,Gastropoda,,,,
+Species,Benthocodon pedunculata,Animalia,Cnidaria,Hydrozoa,Trachymedusae,Rhopalonematidae,Benthocodon,Benthocodon pedunculatus
+Species,Octopus rubescens,Animalia,Mollusca,Cephalopoda,Octopoda,Octopodidae,Octopus,Octopus rubescens
+Species,Microstomus pacificus,Animalia,Chordata,,Pleuronectiformes,Pleuronectidae,Microstomus,Microstomus pacificus
+Species,Heteropolypus ritteri,Animalia,Cnidaria,Anthozoa,Scleralcyonacea,Coralliidae,Heteropolypus,Heteropolypus ritteri
+Unknown,Parastenella,,,,,,,
+Genus,Staurocalyptus,Animalia,Porifera,Hexactinellida,Lyssacinosida,Rossellidae,Staurocalyptus,
+Family,Hormathiidae,Animalia,Cnidaria,Anthozoa,Actiniaria,Hormathiidae,,
+Order,Scleractinia,Animalia,Cnidaria,Anthozoa,Scleractinia,,,
+Kingdom,Elpidia,Animalia,,,,,,
+Genus,Asbestopluma,Animalia,Porifera,Demospongiae,Poecilosclerida,Cladorhizidae,Asbestopluma,
+Genus,Isosicyonis,Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Isosicyonis,
+Unknown,Umbellula,,,,,,,
+Genus,Sebastes,Animalia,Chordata,,Scorpaeniformes,Sebastidae,Sebastes,
+Species,Metridium farcimen,Animalia,Cnidaria,Anthozoa,Actiniaria,Metridiidae,Metridium,Metridium farcimen
+Species,Merluccius productus,Animalia,Chordata,,Gadiformes,Merlucciidae,Merluccius,Merluccius productus
+Genus,Funiculina,Animalia,Cnidaria,Anthozoa,Scleralcyonacea,Funiculinidae,Funiculina,
+Order,Brisingida,Animalia,Echinodermata,Asteroidea,Brisingida,,,
+Species,Pyrosoma atlanticum,Animalia,Chordata,Thaliacea,Pyrosomatida,Pyrosomatidae,Pyrosoma,Pyrosoma atlanticum
+Genus,Acanthoptilum,Animalia,Cnidaria,Anthozoa,Scleralcyonacea,Virgulariidae,Acanthoptilum,
+Unknown,Actinopterygii,,,,,,,
+Species,Chorilia longipes,Animalia,Arthropoda,Malacostraca,Decapoda,Epialtidae,Chorilia,Chorilia longipes
+Species,Paralomis multispina,Animalia,Arthropoda,Malacostraca,Decapoda,Lithodidae,Paralomis,Paralomis multispina
+Species,Sebastes diploproa,Animalia,Chordata,,Scorpaeniformes,Sebastidae,Sebastes,Sebastes diploproa
+Genus,Mycale,Animalia,Porifera,Demospongiae,Poecilosclerida,Mycalidae,Mycale,
+Species,Mediaster aequalis,Animalia,Echinodermata,Asteroidea,Valvatida,Goniasteridae,Mediaster,Mediaster aequalis
+Species,Asbestopluma monticola,Animalia,Porifera,Demospongiae,Poecilosclerida,Cladorhizidae,Asbestopluma,Asbestopluma monticola
+Unknown,Acanthascinae,,,,,,,
+Species,Florometra serratissima,Animalia,Echinodermata,Crinoidea,Comatulida,Antedonidae,Florometra,Florometra serratissima
+Species,Psathyrometra fragilis,Animalia,Echinodermata,Crinoidea,Comatulida,Zenometridae,Psathyrometra,Psathyrometra fragilis
+Order,Zoantharia,Animalia,Cnidaria,Anthozoa,Zoantharia,,,
+Species,Gersemia juliepackardae,Animalia,Cnidaria,Anthozoa,Malacalcyonacea,Alcyoniidae,Gersemia,Gersemia juliepackardae
+Species,Pandalus platyceros,Animalia,Arthropoda,Malacostraca,Decapoda,Pandalidae,Pandalus,Pandalus platyceros
+Family,Lithodidae,Animalia,Arthropoda,Malacostraca,Decapoda,Lithodidae,,
+Family,Ophiacanthidae,Animalia,Echinodermata,Ophiuroidea,Ophiacanthida,Ophiacanthidae,,
+Species,Corallimorphus pilatus,Animalia,Cnidaria,Anthozoa,Corallimorpharia,Corallimorphidae,Corallimorphus,Corallimorphus pilatus
+Species,Ptychogastria polaris,Animalia,Cnidaria,Hydrozoa,Trachymedusae,Ptychogastriidae,Ptychogastria,Ptychogastria polaris
+Order,Amphipoda,Animalia,Arthropoda,Malacostraca,Amphipoda,,,
+Unknown,Heterocarpus,,,,,,,
+Species,Pennatula phosphorea,Animalia,Cnidaria,Anthozoa,Scleralcyonacea,Pennatulidae,Pennatula,Pennatula phosphorea
+Family,Vesicomyidae,Animalia,Mollusca,Bivalvia,Venerida,Vesicomyidae,,
