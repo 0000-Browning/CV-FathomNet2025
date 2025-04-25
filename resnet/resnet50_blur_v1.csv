@@ -1,0 +1,789 @@
+annotation_id,concept_name
+1,Pandalus amplus
+2,Funiculina
+3,Funiculina
+4,Funiculina
+5,Funiculina
+6,Merluccius productus
+7,Florometra serratissima
+8,Umbellula
+9,Funiculina
+10,Asbestopluma monticola
+11,Funiculina
+12,Funiculina
+13,Funiculina
+14,Sebastes
+15,Isosicyonis
+16,Mediaster aequalis
+17,Isosicyonis
+18,Isosicyonis
+19,Lithodidae
+20,Paralomis multispina
+21,Lithodidae
+22,Ophiuroidea
+23,Merluccius productus
+24,Ceriantharia
+25,Ceriantharia
+26,Ceriantharia
+27,Ophiuroidea
+28,Ophiuroidea
+29,Funiculina
+30,Chorilia longipes
+31,Ophiuroidea
+32,Ophiuroidea
+33,Ophiuroidea
+34,Ophiuroidea
+35,Psathyrometra fragilis
+36,Psathyrometra fragilis
+37,Tunicata
+38,Porifera
+39,Gastropoda
+40,Scleractinia
+41,Tunicata
+42,Porifera
+43,Tunicata
+44,Porifera
+45,Tunicata
+46,Caridea
+47,Tunicata
+48,Caridea
+49,Caridea
+50,Caridea
+51,Strongylocentrotus fragilis
+52,Brisingida
+53,Lithodidae
+54,Florometra serratissima
+55,Porifera
+56,Acanthoptilum
+57,Acanthoptilum
+58,Scotoplanes
+59,Funiculina
+60,Funiculina
+61,Psolus squamatus
+62,Strongylocentrotus fragilis
+63,Asbestopluma
+64,Psolus squamatus
+65,Psathyrometra fragilis
+66,Mycale
+67,Porifera
+68,Funiculina
+69,Staurocalyptus
+70,Metridium farcimen
+71,Acanthascinae
+72,Acanthascinae
+73,Peniagone
+74,Benthocodon pedunculata
+75,Peniagone
+76,Scotoplanes globosa
+77,Peniagone
+78,Terebellidae
+79,Benthocodon pedunculata
+80,Munnopsidae
+81,Zoantharia
+82,Isosicyonis
+83,Scleractinia
+84,Scleractinia
+85,Ceriantharia
+86,Acanthascinae
+87,Pannychia moseleyi
+88,Psolus squamatus
+89,Porifera
+90,Heterochone calyx
+91,Acanthoptilum
+92,Paragorgia
+93,Asbestopluma
+94,Tunicata
+95,Asbestopluma
+96,Porifera
+97,Crinoidea
+98,Heterochone calyx
+99,Apostichopus leukothele
+100,Pennatula phosphorea
+101,Brisingida
+102,Corallimorphus pilatus
+103,Elpidia
+104,Microstomus pacificus
+105,Gastropoda
+106,Staurocalyptus
+107,Mycale
+108,Gastropoda
+109,Psolus squamatus
+110,Gastropoda
+111,Gastropoda
+112,Gastropoda
+113,Mycale
+114,Elpidia
+115,Strongylocentrotus fragilis
+116,Strongylocentrotus fragilis
+117,Strongylocentrotus fragilis
+118,Strongylocentrotus fragilis
+119,Brisingida
+120,Ceriantharia
+121,Ceriantharia
+122,Isidella tentaculum
+123,Psolus squamatus
+124,Psolus squamatus
+125,Merluccius productus
+126,Peniagone
+127,Scotoplanes
+128,Microstomus pacificus
+129,Lithodidae
+130,Metridium farcimen
+131,Corallimorphus pilatus
+132,Paralomis multispina
+133,Terebellidae
+134,Porifera
+135,Caridea
+136,Zoantharia
+137,Amphipoda
+138,Zoantharia
+139,Amphipoda
+140,Zoantharia
+141,Scleractinia
+142,Holothuroidea
+143,Zoantharia
+144,Peniagone
+145,Heterochone calyx
+146,Psathyrometra fragilis
+147,Heterochone calyx
+148,Ophiacanthidae
+149,Caridea
+150,Keratoisis
+151,Paragorgia arborea
+152,Merluccius productus
+153,Isidella tentaculum
+154,Paragorgia
+155,Hippasteria
+156,Paragorgia arborea
+157,Microstomus pacificus
+158,Paralomis multispina
+159,Octopus rubescens
+160,Heteropolypus ritteri
+161,Paragorgia
+162,Asteroidea
+163,Isididae
+164,Isidella tentaculum
+165,Paralomis multispina
+166,Sebastolobus
+167,Hormathiidae
+168,Farrea
+169,Florometra serratissima
+170,Paragorgia
+171,Scleractinia
+172,Isidella tentaculum
+173,Scleractinia
+174,Pannychia moseleyi
+175,Ophiuroidea
+176,Sebastolobus
+177,Ophiuroidea
+178,Pannychia moseleyi
+179,Ophiuroidea
+180,Ophiuroidea
+181,Ophiuroidea
+182,Sebastolobus
+183,Ophiuroidea
+184,Sebastolobus
+185,Asbestopluma
+186,Ceriantharia
+187,Paragorgia arborea
+188,Pyrosoma atlanticum
+189,Paragorgia arborea
+190,Paragorgia
+191,Hippasteria
+192,Brisingida
+193,Ceriantharia
+194,Psolus squamatus
+195,Psathyrometra fragilis
+196,Paragorgia
+197,Brisingida
+198,Paragorgia arborea
+199,Brisingida
+200,Tunicata
+201,Asbestopluma monticola
+202,Chorilia longipes
+203,Keratoisis
+204,Keratoisis
+205,Asbestopluma monticola
+206,Heterochone calyx
+207,Heterochone calyx
+208,Isidella tentaculum
+209,Psolus squamatus
+210,Florometra serratissima
+211,Crinoidea
+212,Terebellidae
+213,Benthocodon pedunculata
+214,Peniagone
+215,Ophiacanthidae
+216,Paralomis multispina
+217,Strongylocentrotus fragilis
+218,Corallimorphus pilatus
+219,Strongylocentrotus fragilis
+220,Ophiacanthidae
+221,Corallimorphus pilatus
+222,Heterocarpus
+223,Corallimorphus pilatus
+224,Corallimorphus pilatus
+225,Caridea
+226,Heterocarpus
+227,Heterocarpus
+228,Pandalus amplus
+229,Heterocarpus
+230,Caridea
+231,Mediaster aequalis
+232,Heteropolypus ritteri
+233,Paragorgia arborea
+234,Corallimorphus pilatus
+235,Psathyrometra fragilis
+236,Elpidia
+237,Pannychia moseleyi
+238,Isididae
+239,Asbestopluma
+240,Actinopterygii
+241,Gastropoda
+242,Acanthoptilum
+243,Ophiuroidea
+244,Ophiuroidea
+245,Munidopsis
+246,Munidopsis
+247,Tunicata
+248,Gastropoda
+249,Porifera
+250,Scotoplanes
+251,Elpidia
+252,Paralomis multispina
+253,Paralomis multispina
+254,Actinopterygii
+255,Asbestopluma
+256,Ceriantharia
+257,Asbestopluma
+258,Serpulidae
+259,Corallimorphus pilatus
+260,Corallimorphus pilatus
+261,Holothuroidea
+262,Pennatula phosphorea
+263,Pennatula phosphorea
+264,Holothuroidea
+265,Funiculina
+266,Caridea
+267,Ceriantharia
+268,Psathyrometra fragilis
+269,Florometra serratissima
+270,Psathyrometra fragilis
+271,Brisingida
+272,Psolus squamatus
+273,Asbestopluma monticola
+274,Elpidia
+275,Elpidia
+276,Elpidia
+277,Chorilia longipes
+278,Ophiuroidea
+279,Caridea
+280,Caridea
+281,Asbestopluma monticola
+282,Rathbunaster californicus
+283,Scotoplanes globosa
+284,Asteroidea
+285,Asteroidea
+286,Asteroidea
+287,Caridea
+288,Caridea
+289,Caridea
+290,Acanthoptilum
+291,Isidella tentaculum
+292,Isidella tentaculum
+293,Isidella tentaculum
+294,Pandalus amplus
+295,Lithodidae
+296,Hormathiidae
+297,Hormathiidae
+298,Isosicyonis
+299,Caridea
+300,Ophiuroidea
+301,Munidopsis
+302,Munidopsis
+303,Porifera
+304,Delectopecten
+305,Mediaster aequalis
+306,Chionoecetes tanneri
+307,Acanthascinae
+308,Porifera
+309,Porifera
+310,Brisingida
+311,Scotoplanes globosa
+312,Amphipoda
+313,Acanthoptilum
+314,Acanthoptilum
+315,Ceriantharia
+316,Elpidia
+317,Scotoplanes globosa
+318,Scotoplanes globosa
+319,Florometra serratissima
+320,Metridium farcimen
+321,Microstomus pacificus
+322,Metridium farcimen
+323,Metridium farcimen
+324,Metridium farcimen
+325,Florometra serratissima
+326,Elpidia
+327,Elpidia
+328,Metridium farcimen
+329,Pannychia moseleyi
+330,Asbestopluma
+331,Caridea
+332,Elpidia
+333,Elpidia
+334,Umbellula
+335,Actinopterygii
+336,Asbestopluma
+337,Asbestopluma
+338,Asteroidea
+339,Acanthoptilum
+340,Acanthoptilum
+341,Chionoecetes tanneri
+342,Gastropoda
+343,Munnopsidae
+344,Terebellidae
+345,Terebellidae
+346,Terebellidae
+347,Terebellidae
+348,Terebellidae
+349,Terebellidae
+350,Ophiacanthidae
+351,Asbestopluma
+352,Elpidia
+353,Elpidia
+354,Vesicomyidae
+355,Amphipoda
+356,Isidella tentaculum
+357,Munnopsidae
+358,Ophiacanthidae
+359,Pannychia moseleyi
+360,Pannychia moseleyi
+361,Psolus squamatus
+362,Hormathiidae
+363,Zoantharia
+364,Pannychia moseleyi
+365,Crinoidea
+366,Ophiacanthidae
+367,Pannychia moseleyi
+368,Hormathiidae
+369,Psolus squamatus
+370,Crinoidea
+371,Corallimorphus pilatus
+372,Tunicata
+373,Pannychia moseleyi
+374,Acanthascinae
+375,Acanthoptilum
+376,Ophiacanthidae
+377,Serpulidae
+378,Serpulidae
+379,Paralomis multispina
+380,Serpulidae
+381,Asbestopluma
+382,Asbestopluma
+383,Asbestopluma
+384,Vesicomyidae
+385,Isididae
+386,Asteroidea
+387,Keratoisis
+388,Ceriantharia
+389,Ophiacanthidae
+390,Merluccius productus
+391,Caridea
+392,Amphipoda
+393,Brisingida
+394,Isosicyonis
+395,Sebastolobus
+396,Sebastolobus
+397,Sebastolobus
+398,Corallimorphus pilatus
+399,Paralomis multispina
+400,Psolus squamatus
+401,Pandalus amplus
+402,Rathbunaster californicus
+403,Hormathiidae
+404,Florometra serratissima
+405,Pandalus amplus
+406,Keratoisis
+407,Ceriantharia
+408,Vesicomyidae
+409,Terebellidae
+410,Terebellidae
+411,Terebellidae
+412,Terebellidae
+413,Munidopsis
+414,Asbestopluma
+415,Caridea
+416,Paragorgia
+417,Pandalus amplus
+418,Tunicata
+419,Ceriantharia
+420,Paragorgia
+421,Metridium farcimen
+422,Amphipoda
+423,Liponema brevicorne
+424,Sebastolobus
+425,Scotoplanes
+426,Actiniaria
+427,Asteroidea
+428,Actiniaria
+429,Paralomis multispina
+430,Funiculina
+431,Brisingida
+432,Caridea
+433,Chorilia longipes
+434,Sebastolobus
+435,Corallimorphus pilatus
+436,Chorilia longipes
+437,Ophiacanthidae
+438,Ceriantharia
+439,Funiculina
+440,Porifera
+441,Pennatula phosphorea
+442,Porifera
+443,Ophiacanthidae
+444,Holothuroidea
+445,Asbestopluma
+446,Brisingida
+447,Pannychia moseleyi
+448,Funiculina
+449,Sebastes
+450,Sebastolobus
+451,Corallimorphus pilatus
+452,Apostichopus leukothele
+453,Corallimorphus pilatus
+454,Metridium farcimen
+455,Scleractinia
+456,Scleractinia
+457,Zoantharia
+458,Zoantharia
+459,Metridium farcimen
+460,Metridium farcimen
+461,Vesicomyidae
+462,Abyssocucumis abyssorum
+463,Lithodidae
+464,Tunicata
+465,Pandalus amplus
+466,Holothuroidea
+467,Psolus squamatus
+468,Amphipoda
+469,Munnopsidae
+470,Florometra serratissima
+471,Staurocalyptus
+472,Pyrosoma atlanticum
+473,Peniagone
+474,Asbestopluma monticola
+475,Asbestopluma monticola
+476,Elpidia
+477,Munnopsidae
+478,Pennatula phosphorea
+479,Pennatula phosphorea
+480,Pennatula phosphorea
+481,Caridea
+482,Pennatula phosphorea
+483,Pennatula phosphorea
+484,Funiculina
+485,Pennatula phosphorea
+486,Pennatula phosphorea
+487,Pennatula phosphorea
+488,Paragorgia
+489,Keratoisis
+490,Isidella tentaculum
+491,Heterochone calyx
+492,Keratoisis
+493,Keratoisis
+494,Keratoisis
+495,Porifera
+496,Chorilia longipes
+497,Pandalus amplus
+498,Ophiuroidea
+499,Ophiuroidea
+500,Florometra serratissima
+501,Parastenella
+502,Chorilia longipes
+503,Sebastes
+504,Hexactinellida
+505,Lithodidae
+506,Funiculina
+507,Lithodidae
+508,Ophiuroidea
+509,Pandalus platyceros
+510,Acanthoptilum
+511,Acanthoptilum
+512,Lithodidae
+513,Lithodidae
+514,Lithodidae
+515,Lithodidae
+516,Pyrosoma atlanticum
+517,Corallimorphus pilatus
+518,Tunicata
+519,Holothuroidea
+520,Pennatula phosphorea
+521,Lithodidae
+522,Ophiacanthidae
+523,Caridea
+524,Chorilia longipes
+525,Scotoplanes globosa
+526,Isidella tentaculum
+527,Ophiacanthidae
+528,Funiculina
+529,Funiculina
+530,Funiculina
+531,Funiculina
+532,Ceriantharia
+533,Ceriantharia
+534,Florometra serratissima
+535,Asbestopluma monticola
+536,Porifera
+537,Funiculina
+538,Ophiacanthidae
+539,Actinopterygii
+540,Microstomus pacificus
+541,Umbellula
+542,Psathyrometra fragilis
+543,Chorilia longipes
+544,Chorilia longipes
+545,Porifera
+546,Acanthoptilum
+547,Actinopterygii
+548,Benthocodon pedunculata
+549,Acanthoptilum
+550,Acanthoptilum
+551,Acanthoptilum
+552,Acanthoptilum
+553,Florometra serratissima
+554,Acanthoptilum
+555,Florometra serratissima
+556,Pyrosoma atlanticum
+557,Pyrosoma atlanticum
+558,Pyrosoma atlanticum
+559,Lithodidae
+560,Paralomis multispina
+561,Umbellula
+562,Pandalus amplus
+563,Sebastes
+564,Acanthoptilum
+565,Acanthoptilum
+566,Florometra serratissima
+567,Acanthoptilum
+568,Florometra serratissima
+569,Octopus rubescens
+570,Paralomis multispina
+571,Tunicata
+572,Florometra serratissima
+573,Microstomus pacificus
+574,Chorilia longipes
+575,Chorilia longipes
+576,Chorilia longipes
+577,Abyssocucumis abyssorum
+578,Sebastes
+579,Pandalus platyceros
+580,Pennatula phosphorea
+581,Asbestopluma monticola
+582,Corallimorphus pilatus
+583,Corallimorphus pilatus
+584,Benthocodon pedunculata
+585,Florometra serratissima
+586,Ophiuroidea
+587,Amphipoda
+588,Benthocodon pedunculata
+589,Benthocodon pedunculata
+590,Benthocodon pedunculata
+591,Benthocodon pedunculata
+592,Paelopatides confundens
+593,Actinopterygii
+594,Paelopatides confundens
+595,Brisingida
+596,Porifera
+597,Peniagone
+598,Corallimorphus pilatus
+599,Microstomus pacificus
+600,Delectopecten
+601,Florometra serratissima
+602,Acanthoptilum
+603,Delectopecten
+604,Acanthoptilum
+605,Acanthoptilum
+606,Pannychia moseleyi
+607,Chionoecetes tanneri
+608,Benthocodon pedunculata
+609,Pennatula phosphorea
+610,Corallimorphus pilatus
+611,Ptychogastria polaris
+612,Delectopecten
+613,Ptychogastria polaris
+614,Ptychogastria polaris
+615,Ptychogastria polaris
+616,Delectopecten
+617,Delectopecten
+618,Delectopecten
+619,Delectopecten
+620,Delectopecten
+621,Delectopecten
+622,Delectopecten
+623,Benthocodon pedunculata
+624,Elpidia
+625,Chionoecetes tanneri
+626,Amphipoda
+627,Tunicata
+628,Scotoplanes
+629,Liponema brevicorne
+630,Pannychia moseleyi
+631,Crinoidea
+632,Chorilia longipes
+633,Pandalus amplus
+634,Heterocarpus
+635,Florometra serratissima
+636,Pannychia moseleyi
+637,Gastropoda
+638,Merluccius productus
+639,Zoantharia
+640,Vesicomyidae
+641,Florometra serratissima
+642,Florometra serratissima
+643,Florometra serratissima
+644,Gersemia juliepackardae
+645,Gersemia juliepackardae
+646,Florometra serratissima
+647,Gersemia juliepackardae
+648,Florometra serratissima
+649,Keratoisis
+650,Ophiuroidea
+651,Corallimorphus pilatus
+652,Holothuroidea
+653,Apostichopus leukothele
+654,Florometra serratissima
+655,Sebastes
+656,Amphipoda
+657,Caridea
+658,Psathyrometra fragilis
+659,Terebellidae
+660,Florometra serratissima
+661,Florometra serratissima
+662,Florometra serratissima
+663,Florometra serratissima
+664,Psathyrometra fragilis
+665,Terebellidae
+666,Acanthoptilum
+667,Amphipoda
+668,Scotoplanes globosa
+669,Psolus squamatus
+670,Chorilia longipes
+671,Corallimorphus pilatus
+672,Brisingida
+673,Psathyrometra fragilis
+674,Gersemia juliepackardae
+675,Gersemia juliepackardae
+676,Brisingida
+677,Ophiacanthidae
+678,Abyssocucumis abyssorum
+679,Florometra serratissima
+680,Merluccius productus
+681,Florometra serratissima
+682,Florometra serratissima
+683,Umbellula
+684,Merluccius productus
+685,Psathyrometra fragilis
+686,Ophiuroidea
+687,Florometra serratissima
+688,Ophiuroidea
+689,Florometra serratissima
+690,Caridea
+691,Lithodidae
+692,Parastenella
+693,Brisingida
+694,Porifera
+695,Hippasteria
+696,Asbestopluma monticola
+697,Gersemia juliepackardae
+698,Funiculina
+699,Psolus squamatus
+700,Florometra serratissima
+701,Corallimorphus pilatus
+702,Mediaster aequalis
+703,Apostichopus leukothele
+704,Lithodidae
+705,Pyrosoma atlanticum
+706,Caridea
+707,Ceriantharia
+708,Crinoidea
+709,Crinoidea
+710,Liponema brevicorne
+711,Hippasteria
+712,Scotoplanes globosa
+713,Scotoplanes globosa
+714,Isidella tentaculum
+715,Chorilia longipes
+716,Pandalus platyceros
+717,Hippasteria
+718,Rathbunaster californicus
+719,Psathyrometra fragilis
+720,Acanthoptilum
+721,Sebastes
+722,Acanthoptilum
+723,Acanthoptilum
+724,Caridea
+725,Florometra serratissima
+726,Hippasteria
+727,Paelopatides confundens
+728,Scotoplanes globosa
+729,Microstomus pacificus
+730,Amphipoda
+731,Florometra serratissima
+732,Florometra serratissima
+733,Mediaster aequalis
+734,Lithodidae
+735,Mediaster aequalis
+736,Mycale
+737,Merluccius productus
+738,Caridea
+739,Mediaster aequalis
+740,Merluccius productus
+741,Florometra serratissima
+742,Psathyrometra fragilis
+743,Florometra serratissima
+744,Florometra serratissima
+745,Holothuroidea
+746,Pannychia moseleyi
+747,Pannychia moseleyi
+748,Corallimorphus pilatus
+749,Ceriantharia
+750,Elpidia
+751,Ceriantharia
+752,Vesicomyidae
+753,Brisingida
+754,Florometra serratissima
+755,Merluccius productus
+756,Ophiuroidea
+757,Apostichopus leukothele
+758,Isididae
+759,Psolus squamatus
+760,Gersemia juliepackardae
+761,Caridea
+762,Isididae
+763,Lithodidae
+764,Pennatula phosphorea
+765,Serpulidae
+766,Merluccius productus
+767,Pandalus amplus
+768,Staurocalyptus
+769,Staurocalyptus
+770,Terebellidae
+771,Funiculina
+772,Lithodidae
+773,Sebastes
+774,Corallimorphus pilatus
+775,Merluccius productus
+776,Psolus squamatus
+777,Ophiacanthidae
+778,Paelopatides confundens
+779,Psathyrometra fragilis
+780,Mycale
+781,Mycale
+782,Florometra serratissima
+783,Paragorgia
+784,Funiculina
+785,Delectopecten
+786,Elpidia
+787,Caridea
+788,Pandalus amplus

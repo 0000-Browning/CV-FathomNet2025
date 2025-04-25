@@ -2,7 +2,8 @@ import pandas as pd
 import torch
 from PIL import Image
 from torchvision import transforms
-from tqdm import tqdm  # Add this import
+from tqdm import tqdm  
+import matplotlib.pyplot as plt
 
 from hierarchyEncoding.hiearchy import (
     build_raw_paths,
@@ -12,14 +13,14 @@ from hierarchyEncoding.hiearchy import (
 )
 
 # 1) Config
-MODEL_PATH = "../models/best_hier_model.pth"
-CSV_IN     = "../testdata/annotations.csv"
-CSV_OUT    = "../hierarchyEncoding/hier.csv"
+MODEL_PATH = "models/best_hier_model.pth"
+CSV_IN     = "testdata/annotations.csv"
+CSV_OUT    = "hierarchyEncoding/hier.csv"
 IMG_SIZE   = (224, 224)
 device     = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # 2) Recover class names directly from your training CSV
-df_train    = pd.read_csv("../traindata/annotations.csv")
+df_train    = pd.read_csv("traindata/annotations.csv")
 CLASS_NAMES = sorted(df_train["label"].unique())
 
 # 3) Rebuild taxonomy mappings exactly as you did during training
@@ -58,7 +59,6 @@ with torch.no_grad():
         idx = out.argmax(dim=1).item()
         preds.append(CLASS_NAMES[idx])
 
-import matplotlib.pyplot as plt
 
 # Generate histogram of predictions
 pred_counts = pd.Series(preds).value_counts(sort=False)
