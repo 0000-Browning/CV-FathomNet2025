@@ -250,6 +250,7 @@ def main():
             preds_list.append((aid, idx_to_class[pidx]))
 
     sub_df = pd.DataFrame(preds_list, columns=["annotation_id", "concept_name"])
+    sub_df["annotation_id"] = np.arange(1, len(sub_df) + 1)
     sub_df.to_csv("submission.csv", index=False)
     print(sub_df.head())
 
