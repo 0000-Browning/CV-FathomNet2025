@@ -7,13 +7,14 @@ This is an entry in to the 2025 FATHOMNET Competition hosted on Kaggle.com (http
    b. source venv/bin/activate
 2. pip install -r requirements.txt
    -> Note to team: get a list of labels so this isn't required
-3. Download the model of interest using the following link (ResNet-50 and Swin models supported): https://drive.google.com/drive/folders/1WHUaot542uYXNrnH14CUUGO3rxGdrNaS?usp=sharing
+3. Download the model of interest using the following link (ResNet-50 and Swin models supported):
+   [Models Link]https://drive.google.com/drive/folders/1WHUaot542uYXNrnH14CUUGO3rxGdrNaS?usp=sharing
 4. Put the model in samples/models
 5. Find the test script for the model in the samples folder.
 6. cd into sample folder
 7. Run the test script:
    (these are seprate models)
-   $ python resnet_test.py 
+   $ python resnet_test.py
    $ python swin_test.py
    (there are command line arguments for both if you want to change input and output folders)
 8. The output csv will be generated in the output folder and the code will display a few plots
