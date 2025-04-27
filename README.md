@@ -28,7 +28,7 @@ This is an entry in to the 2025 FATHOMNET Competition hosted on Kaggle.com (http
 
 ## Running sample code on training set (Not supported directly, but if you want to run it here's how)
 
-1. [FathomNet Data](https://www.kaggle.com/competitions/fathomnet-2025) Download the data using $ python download.py dataset_train.json data/ [-n NUM_workers]
+1. [FathomNet Data Download instructions](https://www.kaggle.com/competitions/fathomnet-2025) Download the data using $ python download.py dataset_train.json data/ [-n NUM_workers]
    NOTE: this will take like 20 minutes unless you use OSC resources
 2. Then you can use the command line args to specify the paths to the input and output csvs and models.
 
