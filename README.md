@@ -24,7 +24,7 @@ This is an entry in to the 2025 FATHOMNET Competition hosted on Kaggle.com (http
    $ python swin_test.py
 
    (there are command line arguments for both if you want to change input and output folders)
-9. The output csv will be generated in the output/ folder and the code will display a few plots
+9. The output csv will be generated in the output/ folder and the code will display a few plots of sample guesses and the overall guess distribution.
 
 ## Running sample code on training set (Not supported directly, but if you want to run it here's how)
 
