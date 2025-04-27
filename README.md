@@ -8,7 +8,7 @@ This is an entry in to the 2025 FATHOMNET Competition hosted on Kaggle.com (http
 2. pip install -r requirements.txt
    -> Note to team: get a list of labels so this isn't required
 3. Download the model of interest using the following link (ResNet-50 and Swin models supported):
-   [Models Link]https://drive.google.com/drive/folders/1WHUaot542uYXNrnH14CUUGO3rxGdrNaS?usp=sharing
+   [Models Link](https://drive.google.com/drive/folders/1WHUaot542uYXNrnH14CUUGO3rxGdrNaS?usp=sharing)
 4. Put the model in samples/models
 5. Find the test script for the model in the samples folder.
 6. cd into sample folder
