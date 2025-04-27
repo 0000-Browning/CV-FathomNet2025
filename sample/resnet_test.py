@@ -12,6 +12,8 @@ import argparse
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Run inference and display sample predictions.")
 parser.add_argument("--samples", type=int, default=3, help="Number of sample predictions to display (default: 3)")
+parser.add_argument("--data", type=int, default="data/", help="Path to the data directory (default: data/)")
+parser.add_argument("--output", type=int, default="output/", help="Path to the output directory (default: output/)")
 args = parser.parse_args()
 
 # CONFIG
