@@ -12,7 +12,7 @@ This is an entry in to the 2025 FATHOMNET Competition hosted on Kaggle.com (http
 5. Find the test script for the model in the samples folder.
 6. cd into sample folder
 7. Run the test script:
-   $ python resnet_test.py --samples 5 --data data/ --output output/
+   $ python resnet_test.py
    $ python swin_test.py
 8. The output csv will be generated in the output folder and the code will display a few plots
 

@@ -12,9 +12,9 @@ import argparse
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Run inference and display sample predictions.")
 parser.add_argument("--samples", type=int, default=3, help="Number of sample predictions to display (default: 3)")
-parser.add_argument("--model", type=str, default="../models/resnet50_fathomnet_SGD_optimizer.pth", help="Path to your ResNet-50 checkpoint (default: ../models/resnet50_fathomnet_SGD_optimizer.pth)")
-parser.add_argument("--data", type=str, default="data/", help="Path to the data directory (default: data/)")
-parser.add_argument("--output", type=str, default="output/resnet50_blur_sgd.csv", help="Path to the output directory (default: output/resnet50_blur_sgd.csv)")
+parser.add_argument("--model", type=str, default=str(Path("../models/resnet50_fathomnet_SGD_optimizer.pth").resolve()), help="Path to your ResNet-50 checkpoint (default: ../models/resnet50_fathomnet_SGD_optimizer.pth)")
+parser.add_argument("--data", type=str, default=str(Path("data/").resolve()), help="Path to the data directory (default: data/)")
+parser.add_argument("--output", type=str, default=str(Path("output/resnet50_blur_sgd.csv").resolve()), help="Path to the output directory (default: output/resnet50_blur_sgd.csv)")
 args = parser.parse_args()
 
 # CONFIG
