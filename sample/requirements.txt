@@ -1,0 +1,12 @@
+httpx
+pillow
+coco-lib
+pandas
+Pillow
+torch
+torchvision
+tqdm
+transformers
+pybioclip
+ultralytics
+fathomnet
