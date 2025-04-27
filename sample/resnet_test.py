@@ -1,32 +1,58 @@
+import argparse
+import os
 from pathlib import Path
 
+import matplotlib.pyplot as plt
 import pandas as pd
 import torch
 import torch.nn as nn
 from PIL import Image
 from torchvision import models, transforms
-from tqdm import tqdm  
-import matplotlib.pyplot as plt
-import argparse
+from tqdm import tqdm
 
+# ----------------------------
 # Parse command-line arguments
-parser = argparse.ArgumentParser(description="Run inference and display sample predictions.")
-parser.add_argument("--samples", type=int, default=3, help="Number of sample predictions to display (default: 3)")
-parser.add_argument("--model", type=str, default=str(Path("../models/resnet50_fathomnet_SGD_optimizer.pth").resolve()), help="Path to your ResNet-50 checkpoint (default: ../models/resnet50_fathomnet_SGD_optimizer.pth)")
-parser.add_argument("--data", type=str, default=str(Path("data/").resolve()), help="Path to the data directory (default: data/)")
-parser.add_argument("--output", type=str, default=str(Path("output/resnet50_blur_sgd.csv").resolve()), help="Path to the output directory (default: output/resnet50_blur_sgd.csv)")
+# ----------------------------
+parser = argparse.ArgumentParser(
+    description="Run inference and display sample predictions."
+)
+parser.add_argument(
+    "--samples",
+    type=int,
+    default=3,
+    help="Number of sample predictions to display (default: 3)",
+)
+parser.add_argument(
+    "--model",
+    type=str,
+    default=str(Path("../models/resnet50_fathomnet_SGD_optimizer.pth").resolve()),
+    help="Path to your ResNet-50 checkpoint",
+)
+parser.add_argument(
+    "--data",
+    type=str,
+    default=str(Path("data/").resolve()),
+    help="Path to the data directory",
+)
+parser.add_argument(
+    "--output",
+    type=str,
+    default=str(Path("output/resnet50_blur_sgd.csv").resolve()),
+    help="Path to the output CSV file",
+)
 args = parser.parse_args()
 
-# CONFIG
-MODEL_PATH = args.model
-CSV_IN = args.data + "annotations.csv"
-CSV_OUT = args.output
+# ----------------------------
+# Configuration
+# ----------------------------
+DATA_DIR = Path(args.data)
+MODEL_PATH = Path(args.model)
+CSV_IN = "data/annotations.csv"
+CSV_OUT = Path(args.output)
 IMG_SIZE = (224, 224)
-
 # get class names
-df_train    = pd.read_csv(args.data + "annotations_train.csv")
+df_train = pd.read_csv("data/annotations_train.csv")
 CLASS_NAMES = sorted(df_train["label"].unique())
-
 
 # build & load model
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -46,6 +72,26 @@ tf = transforms.Compose(
 
 # inference…
 df = pd.read_csv(CSV_IN)
+
+
+# turn “/some/other/machine/path/.../rois/img123.jpg” → “data/rois/img123.jpg”
+def fix_path(orig_path: str) -> str:
+    # 1) Unify separators so we can split reliably
+    norm = orig_path.replace("\\", "/")
+    # 2) Try to grab everything after the real "data/rois" in that string
+    if "data/rois" in norm:
+        # split off the prefix, keep "/subdir/.../file.png"
+        rel = norm.split("data/rois", 1)[1]
+    else:
+        # fallback to just the filename if it wasn't there
+        rel = "/" + os.path.basename(norm)
+    # 3) Strip any leading slash/backslash
+    rel = rel.lstrip("/\\")
+    # 4) Re-build with your local data/rois base
+    return os.path.join("data", "rois", rel)
+
+
+df["path"] = df["path"].apply(fix_path)
 paths = df["path"].tolist()
 preds = []
 with torch.no_grad():
@@ -80,10 +126,13 @@ print(f"Wrote predictions to {CSV_OUT}")
 
 # Show sample predictions with images
 preds_df = pd.DataFrame({"path": paths, "concept_name": preds})
-sample_df = preds_df.sample(args.samples)  # Select the number of samples specified by the user
+sample_df = preds_df.sample(
+    args.samples
+)  # Select the number of samples specified by the user
 for _, row in sample_df.iterrows():
     img = Image.open(row["path"])
     plt.imshow(img)
     plt.title(f"Prediction: {row['concept_name']}")
     plt.axis("off")
     plt.show()
+
