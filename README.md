@@ -12,8 +12,10 @@ This is an entry in to the 2025 FATHOMNET Competition hosted on Kaggle.com (http
 5. Find the test script for the model in the samples folder.
 6. cd into sample folder
 7. Run the test script:
-   $ python resnet_test.py
+   (these are seprate models)
+   $ python resnet_test.py 
    $ python swin_test.py
+   (there are command line arguments for both if you want to change input and output folders)
 8. The output csv will be generated in the output folder and the code will display a few plots
 
 # Training set (Not supported directly, but if you want to run it here's how)
