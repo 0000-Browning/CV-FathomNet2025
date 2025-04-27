@@ -10,7 +10,7 @@ This is an entry in to the 2025 FATHOMNET Competition hosted on Kaggle.com (http
    a. python -m venv venv
 
    b. source venv/bin/activate
-2. pip install -r requirements.txt
+2. Download requirements (there may be a few we missed): $ pip install -r requirements.txt
 3. Download the model of interest using the following link (ResNet-50 SGD and Swin models supported by default):
    [Models Link](https://drive.google.com/drive/folders/1WHUaot542uYXNrnH14CUUGO3rxGdrNaS?usp=sharing)
 4. Put the model in the models/ folder
