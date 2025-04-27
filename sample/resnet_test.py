@@ -12,18 +12,19 @@ import argparse
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Run inference and display sample predictions.")
 parser.add_argument("--samples", type=int, default=3, help="Number of sample predictions to display (default: 3)")
-parser.add_argument("--data", type=int, default="data/", help="Path to the data directory (default: data/)")
-parser.add_argument("--output", type=int, default="output/", help="Path to the output directory (default: output/)")
+parser.add_argument("--model", type=str, default="../models/resnet50_fathomnet_SGD_optimizer.pth", help="Path to your ResNet-50 checkpoint (default: ../models/resnet50_fathomnet_SGD_optimizer.pth)")
+parser.add_argument("--data", type=str, default="data/", help="Path to the data directory (default: data/)")
+parser.add_argument("--output", type=str, default="output/resnet50_blur_sgd.csv", help="Path to the output directory (default: output/resnet50_blur_sgd.csv)")
 args = parser.parse_args()
 
 # CONFIG
-MODEL_PATH = "models/resnet50_fathomnet_SGD_optimizer.pth"
-CSV_IN = "data/annotations.csv"
-CSV_OUT = "output/resnet50_blur_sgd.csv"
+MODEL_PATH = args.model
+CSV_IN = args.data + "annotations.csv"
+CSV_OUT = args.output
 IMG_SIZE = (224, 224)
 
 # get class names
-df_train    = pd.read_csv("data/annotations_train.csv")
+df_train    = pd.read_csv(args.data + "annotations_train.csv")
 CLASS_NAMES = sorted(df_train["label"].unique())
 
 
