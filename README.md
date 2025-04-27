@@ -10,12 +10,12 @@ This is an entry in to the 2025 FATHOMNET Competition hosted on Kaggle.com (http
    a. python -m venv venv
 
    b. source venv/bin/activate
-3. pip install -r requirements.txt
-4. Download the model of interest using the following link (ResNet-50 SGD and Swin models supported by default):
+2. pip install -r requirements.txt
+3. Download the model of interest using the following link (ResNet-50 SGD and Swin models supported by default):
    [Models Link](https://drive.google.com/drive/folders/1WHUaot542uYXNrnH14CUUGO3rxGdrNaS?usp=sharing)
-5. Put the model in the models/ folder
-6. Find the test script for the model in the samples folder.
-7. cd into sample folder
+4. Put the model in the models/ folder
+5. cd into sample folder: $cd sample/
+6. Find the test script for the model of interest in the sample/ folder.
 8. Run the test script:
    (these are seprate models)
 
