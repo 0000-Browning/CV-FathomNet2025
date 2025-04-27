@@ -7,13 +7,17 @@ from PIL import Image
 from torchvision import models, transforms
 from tqdm import tqdm  
 import matplotlib.pyplot as plt
+import argparse
 
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description="Run inference and display sample predictions.")
+parser.add_argument("--samples", type=int, default=1, help="Number of sample predictions to display (default: 1)")
+args = parser.parse_args()
 
-# MODEL_PATH = input("Enter model path: ")
 # CONFIG
 MODEL_PATH = "models/resnet50_fathomnet_SGD_optimizer.pth"
 CSV_IN = "data/annotations.csv"
-CSV_OUT = "resnet/resnet50_blur_sgd.csv"
+CSV_OUT = "output/resnet50_blur_sgd.csv"
 IMG_SIZE = (224, 224)
 
 # get class names
@@ -70,3 +74,13 @@ pd.DataFrame({"annotation_id": nums, "concept_name": preds}).to_csv(
     CSV_OUT, index=False
 )
 print(f"Wrote predictions to {CSV_OUT}")
+
+# Show sample predictions with images
+preds_df = pd.DataFrame({"path": paths, "concept_name": preds})
+sample_df = preds_df.sample(args.samples)  # Select the number of samples specified by the user
+for _, row in sample_df.iterrows():
+    img = Image.open(row["path"])
+    plt.imshow(img)
+    plt.title(f"Prediction: {row['concept_name']}")
+    plt.axis("off")
+    plt.show()
